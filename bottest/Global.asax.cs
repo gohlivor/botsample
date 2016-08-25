@@ -1,7 +1,7 @@
 ﻿using System.Configuration;
 using System.Web.Http;
 
-namespace bottest
+namespace bottest { 
 
     public class WebApiApplication : System.Web.HttpApplication
 {
@@ -17,6 +17,7 @@ namespace bottest
         AuthBot.Models.AuthSettings.ClientSecret = ConfigurationManager.AppSettings["ActiveDirectory.ClientSecret"];
         AuthBot.Models.AuthSettings.Scopes = ConfigurationManager.AppSettings["ActiveDirectory.Scopes"].Split(',');
 
-    }
+
+        }
 }
 }
